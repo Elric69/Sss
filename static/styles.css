@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.background-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.text {
+    text-align: left;
+    color: #d5bfff;
+}
+
+/* Grid container for responsive divs */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.frontend, .backend, .skills, .database {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+    text-align: center;
+    color: #d5bfff;
+}
+
+/* LeetCode section */
+.leetcode {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px; 
+    text-align: center;
+    color: #d5bfff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    color: #9a40ff;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    color: #9a40ff;
+}
+
+p {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+
+.footer {
+    background: rgba(120, 0, 128, 0.5);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer-content a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content img {
+    vertical-align: middle;
+}
+
+
+@media (min-width: 768px) {
+    .grid-container {
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .frontend, .backend, .skills, .database {
+        flex: 1 1 100%; 
+    }
+}
+
