@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Shiv</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'styles.css')}}">
+    <script src="{{url_for('static', filename = 'src/count.js')}}"></script>
+</head>
+<body>
+    
+    <div class="background-container">
+        <div class="content">
+            <div class="intro">
+                <img src = "{{url_for('static', filename = 'images/profile.png')}}" alt="Profile Picture" class="profile-image">
+                <div class="text">
+                    <h1>Hi, I'm Shiv</h1>
+                    <p>And welcome to my portfolio!</p>
+                    <p>I'm a CS student passionate about mastering web development, with a focus on both backend and frontend technologies.</p>
+                    <p>I'm also actively learning about JavaScript, React, Node.js, and Python, while also exploring frameworks like Flask, Django, and Express.js.</p>
+                    <p>Feel free to browse and get in touch.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid-container">
+            <div class="skills">
+                <h3>Skills</h3>
+                <p>Some of the skills I'm working on and trying to become better at. Here's some of the languages I know the basics of, and I'm trying to improve:</p>
+            </div>
+            
+            <div class="frontend">
+                <h3>Frontend</h3>
+                <img src="{{url_for('static', filename = 'images/html.png')}}" alt="HTML Image" height="50">
+                <img src="{{url_for('static', filename = 'images/css.png')}}" alt="CSS Image" height="50">
+                <img src="{{url_for('static', filename = 'images/js.png')}}" alt="JavaScript Image" height="50">
+                <img src="{{url_for('static', filename = 'images/react.png')}}" alt="React Image" height="50">
+            </div>
+            
+            <div class="backend">
+                <h3>Backend</h3>
+                <img src="{{url_for('static', filename = 'images/node.png')}}" alt="Node.js Image" height="50">
+                <img src="{{url_for('static', filename = 'images/python.png')}}" alt="Python Image" height="45">
+                <img src="{{url_for('static', filename = 'images/java.png')}}" alt="Java Image" height="55">
+                <img src="{{url_for('static', filename = 'images/express.png')}}" alt="Express.js Image" height="50">
+            </div>
+            
+            <div class="database">
+                <h3>Database</h3>
+                <img src="{{url_for('static', filename = 'images/mysql.png')}}" alt="MySQL Image" height="50">
+                <img src="{{url_for('static', filename = 'images/mongodb.png')}}" alt="MongoDB Image" height="55">
+            </div>
+        </div>
+        
+        <div class="leetcode">
+            <h3>LeetCode</h3>
+            <img src="{{url_for('static', filename = 'images/leetcode.png')}}" alt="LeetCode Image" height="50">
+            <p id="solved-leetcode">Total solved questions: ??<br>Easy: ??<br>Medium: ??<br>Hard: ??</p>
+        </div>
+
+        <!-- Footer section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <h3>Contact</h3>
+                <a href="https://www.linkedin.com/in/shivam-kumar-10966a321" target="_blank">
+                    <img src="{{url_for('static', filename = 'images/linkedin.png')}}" alt="LinkedIn" height="30">
+                </a>
+                <a href="https://www.instagram.com/shivam_9s" target="_blank">
+                    <img src="{{url_for('static', filename = 'images/instagram.png')}}" alt="Instagram" height="30">
+                </a>
+                <a href="https://leetcode.com/u/shiv09ds/" target="_blank">
+                    <img src="{{url_for('static', filename = 'images/leetcode.png')}}" alt="LeetCode" height="30">
+                </a>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
